@@ -1,0 +1,148 @@
+.robot-eye-left {
+  animation: 1.5s infinite alternate left-eye;
+}
+
+@keyframes left-eye {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.robot-eye-right {
+  animation: 1s ease-in-out infinite alternate right-eye;
+}
+
+@keyframes right-eye {
+  from {
+    transform: scale(0.5);
+  }
+  to {
+    transform: scale(1.5);
+  }
+}
+
+.robot-nose-container .robot-nose:hover {
+  animation: nose 5s infinite linear;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@keyframes nose {
+  0% {
+    top: 0;
+    left: 0;
+  }
+  25% {
+    top: 0;
+    left: 50px;
+  }
+  50% {
+    top: 20px;
+    left: 50px;
+  }
+  75% {
+    top: 20px;
+    left: 0;
+  }
+  100% {
+    top: 0;
+    left: 0;
+  }
+}
+
+.tooth {
+  animation: tooth 5s infinite linear alternate;
+}
+
+@keyframes tooth {
+  0% {
+    background-color: white;
+  }
+  50% {
+    background-color: rgb(143, 143, 75);
+    opacity: 0.5;
+  }
+  100% {
+    background-color: rgb(54, 36, 2);
+    opacity: 0;
+  }
+}
+
+.robot-ear-left {
+  animation: 1s ease-in-out infinite alternate left-ear;
+}
+
+@keyframes left-ear {
+  from {
+    border-right: 50px solid transparent;
+  }
+  to {
+    border-right: 50px solid rgb(229, 255, 0);
+    transform: rotate(180deg);
+  }
+}
+
+.robot-ear-right {
+  animation: 1s ease-in-out infinite alternate right-ear;
+}
+
+@keyframes right-ear {
+  from {
+    border-left: 50px solid transparent;
+  }
+  to {
+    border-left: 50px solid rgb(212, 0, 255);
+    transform: rotate(180deg);
+  }
+}
+
+.robot-hair-one,
+.robot-hair-one-right {
+  animation: 3s infinite alternate robot-hair-one;
+}
+
+@keyframes robot-hair-one {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+}
+
+.robot-hair-two,
+.robot-hair-two-right {
+  animation: 3s 0.5s infinite alternate robot-hair-two;
+}
+
+@keyframes robot-hair-two {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+}
+
+.robot-hair-three {
+  animation: 3s 1s infinite alternate robot-hair-three;
+}
+
+@keyframes robot-hair-three {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+}
